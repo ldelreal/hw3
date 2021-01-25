@@ -15,7 +15,7 @@ function pageLoad() {
     levelOfService = 'Noober XL'
   } else if (ride.length == 1 && ride[0].purpleRequested == false && ride[0].numberOfPassengers <= 3) {
     levelOfService = 'Noober X' 
-  } else if (ride.length > 1 && ride[0].numberOfPassengers + ride[1].numberOfPassengers == 2 || ride[0].numberOfPassengers + ride[1].numberOfPassengers + ride[2].numberOfPassengers == 3 ) {
+  } else if (ride.length > 1) {
     levelOfService = 'Noober Pool'
   }
 
